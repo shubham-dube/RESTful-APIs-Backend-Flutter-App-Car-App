@@ -15,5 +15,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.1.1",
     "mongose": "^0.0.2-security"
+    
   }
 }
