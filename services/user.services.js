@@ -7,7 +7,6 @@ class UserService{
             const createUser = new UserModel({name,email,mobile,password});
             await createUser.save();
             return {status:true,message:"Saved in Database"};
-
         }catch(err){
             throw err;
         }
@@ -96,6 +95,7 @@ class MerchantService {
         console.log(Categories);
         return Categories;
     }
+
     static async getBrands(type){
         const Brands =  await BrandModel.find();
         console.log(Brands);
