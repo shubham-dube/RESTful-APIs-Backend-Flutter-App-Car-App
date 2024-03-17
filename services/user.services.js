@@ -96,6 +96,11 @@ class MerchantService {
         console.log(Categories);
         return Categories;
     }
+    static async getBrands(type){
+        const Brands =  await BrandModel.find();
+        console.log(Brands);
+        return Brands;
+    }
 
     static async addBrand(name) {
         try{
